@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/main.css" rel="stylesheet" type="text/css">
+    <title>Document</title>
+</head>
+<body class="bg-slate-100 m-14 flex-col justify-center items-center">
+    <%- include('components/_citybar.ejs') -%>
+    <%- include('components/_weatherCard.ejs') -%>
+    <% if(country===null){ %>
+            <script>alert('City is not found!')</script>
+        <% } %>
+</body>
+</html>
